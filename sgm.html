@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SolidarityGM</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@200;300;400&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: 100%; }
+
+  body {
+    background: #7D0A2B;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    font-family: 'Geist', sans-serif;
+  }
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 2.75rem;
+    border-bottom: 1px solid rgba(240,236,229,0.1);
+  }
+
+  .wordmark {
+    font-size: 0.78rem;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    color: rgba(240,236,229,0.7);
+    text-transform: uppercase;
+  }
+
+  .wordmark span { color: rgba(240,236,229,0.25); }
+
+  .top-right {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .top-right span {
+    font-size: 0.68rem;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(240,236,229,0.2);
+  }
+
+  .mid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2.75rem;
+  }
+
+  .slogan {
+    font-size: clamp(5rem, 16vw, 11rem);
+    font-weight: 200;
+    letter-spacing: -0.04em;
+    color: #F0ECE5;
+    line-height: 0.88;
+  }
+
+  .coming {
+    margin-top: 2.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+  }
+
+  .coming-rule {
+    width: 2rem;
+    height: 1px;
+    background: rgba(240,236,229,0.4);
+    flex-shrink: 0;
+  }
+
+  .coming p {
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: rgba(240,236,229,0.75);
+    letter-spacing: 0.02em;
+    line-height: 1.6;
+  }
+
+  .boroughs {
+    border-top: 1px solid rgba(240,236,229,0.1);
+    padding: 1.4rem 2.75rem;
+    display: flex;
+    gap: 0.35rem 1.5rem;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .borough {
+    font-size: 0.62rem;
+    font-weight: 300;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(240,236,229,0.18);
+  }
+
+  .borough.active {
+    color: rgba(240,236,229,0.8);
+    font-weight: 400;
+  }
+</style>
+</head>
+<body>
+
+  <div class="top">
+    <span class="wordmark">Solidarity<span>GM</span></span>
+    <div class="top-right">
+      <span>Greater Manchester</span>
+      <span>2026</span>
+    </div>
+  </div>
+
+  <div class="mid">
+    <h1 class="slogan">No<br>Pasarán.</h1>
+    <div class="coming">
+      <div class="coming-rule"></div>
+      <p>Check back here soon for information on how to get involved.</p>
+    </div>
+  </div>
+
+  <div class="boroughs">
+    <span class="borough active">Bolton</span>
+    <span class="borough">Bury</span>
+    <span class="borough active">Manchester</span>
+    <span class="borough">Oldham</span>
+    <span class="borough">Rochdale</span>
+    <span class="borough active">Salford</span>
+    <span class="borough">Stockport</span>
+    <span class="borough">Tameside</span>
+    <span class="borough">Trafford</span>
+    <span class="borough active">Wigan</span>
+  </div>
+
+</body>
+</html>
